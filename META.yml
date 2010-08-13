@@ -1,5 +1,5 @@
 ---
-abstract: 'Interface to Yahoo! JAPAN Web APIs'
+abstract: 'Simple Interface to Yahoo! JAPAN Web APIs'
 author:
   - 'AYANOKOUZI, Ryuunosuke <i38w7i3@yahoo.co.jp>'
 build_requires:
@@ -22,4 +22,4 @@ requires:
   Filter::Util::Call: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
