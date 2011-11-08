@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use URI;
 use base qw(WebService::Simple);
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 __PACKAGE__->config(
 		base_url => 'http://yahooapis.jp/',
 		);
@@ -21,9 +21,16 @@ sub new
 {
 	my $class    = shift;
 	my %args     = @_;
+	my %tmp = ();
+	if (defined $args{appid}) {
+		$tmp{appid} = $args{appid};
+		delete $args{appid};
+	}
 	my $self = $class->SUPER::new(%args);
-	$self->{appid} = $args{appid};
-	return $self;	
+	while (my ($key, $val) = each %tmp) {
+		$self->{$key} = $val;
+	}
+	return $self;
 }
 
 sub search     { return shift->_class('::Search'); }
