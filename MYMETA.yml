@@ -22,6 +22,7 @@ no_index:
 requires:
   Filter::Util::Call: 0
   WebService::Simple: 0
+  perl: 5.010001
 resources:
   license: http://dev.perl.org/licenses/
 version: 0.06

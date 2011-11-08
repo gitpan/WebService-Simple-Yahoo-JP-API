@@ -24,8 +24,9 @@ WebService::Simple::Yahoo::JP::API::Jlp - Search Subclass for WebService::Simple
   use WebService::Simple::Yahoo::JP::API;
   use WebService::Simple::Yahoo::JP::API::Jlp;
   my $api = WebService::Simple::Yahoo::JP::API->new(appid => "your appid");
-  my $res = $api->jlp->keyphrase(query => "Perl");
+  my $res = $api->jlp->keyphrase(sentence => "Perl");
   print Dumper $res;
+  print Dumper $res->parse_response;
 
 =head1 DESCRIPTION
 

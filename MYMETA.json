@@ -35,7 +35,8 @@
       "runtime" : {
          "requires" : {
             "Filter::Util::Call" : 0,
-            "WebService::Simple" : 0
+            "WebService::Simple" : 0,
+            "perl" : "5.010001"
          }
       }
    },
