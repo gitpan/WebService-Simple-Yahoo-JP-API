@@ -17,6 +17,7 @@ inc/Test/Builder.pm
 inc/Test/Builder/Module.pm
 inc/Test/More.pm
 lib/WebService/Simple/Yahoo/JP/API.pm
+lib/WebService/Simple/Yahoo/JP/API.pm.orig
 lib/WebService/Simple/Yahoo/JP/API/Auctions.pm
 lib/WebService/Simple/Yahoo/JP/API/Cert.pm
 lib/WebService/Simple/Yahoo/JP/API/Chiebukuro.pm
@@ -33,6 +34,7 @@ MYMETA.json
 MYMETA.yml
 README
 t/00_compile.t
+WebService-Simple-Yahoo-JP-API-0.08.tar
 xt/01_podspell.t
 xt/02_perlcritic.t
 xt/03_pod.t
